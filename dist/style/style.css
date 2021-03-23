@@ -1,0 +1,213 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+#content{
+    font-family: 'Syne Mono', monospace;
+}
+#header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #1561ad;
+    height: 5vh;
+    align-items: center;
+    padding: 0 2em;
+}
+#header > h1{
+    font-size: 4vmin;
+    color: white;
+}
+#header-new-task-add-button{
+    height: 4vmin;
+    width: 4em;
+    background-color: #1561ad;
+    border: 2px solid transparent;
+    border-radius: 10px;
+    font-size: 3vmin;
+    font-weight:bolder;
+    color: white;
+
+}
+#header-new-task-add-button:hover{
+    background-color: #4278af;
+    transition: all 0.5s;
+    cursor: pointer;
+
+}
+#main{
+    background-color:  #1dbab4;
+    color: white;
+    display: flex;
+    height: 95vh;
+}
+#main-sidenav{
+    display: flex;
+    flex-direction: column;
+    width: 30vmin;
+    height: auto;
+    justify-content: space-between;
+    padding: 2em 0;
+    border-right: 2px solid;
+}
+#sidenav-project-container{
+    display: flex;
+    flex-direction: column;
+    height: 10vmax;
+    justify-content: space-around;
+}
+#sidenav-project-container > button{
+    width: auto;
+    background-color: transparent;
+    border: 2px solid transparent;
+    font-size: 3vmin;
+    font-weight:bolder;
+    color: white;
+    font-family: 'Syne Mono', monospace;
+
+}
+#sidenav-project-container > button:hover{
+    background-color: #007e7a;
+    transition: all 0.5s;
+    cursor: pointer;
+}
+#project-create-button{
+    width: auto;
+    background-color: transparent;
+    border: 2px solid transparent;
+    font-size: 2vmin;
+    font-weight:bolder;
+    color: white;
+    font-family: 'Syne Mono', monospace;
+
+}
+#project-create-button:hover{
+    background-color: #007e7a;
+    transition: all 0.5s;
+    cursor: pointer;
+}
+button:focus{
+    outline: unset;
+}
+#main-task-container{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto auto auto;
+    padding-left: 2vmin;
+}
+.main-task-container-element{
+    display: flex;
+    flex-direction: column;
+    padding: 1vmin;
+    width: auto;
+    justify-content: space-around;
+    font-size: 2.5vmin;
+    
+}
+.main-task-container-element > button{
+    width: max-content;
+    height: 3vmin;
+    font-size: 2vmin;
+    background-color: transparent;
+    border: 1px solid white;
+    color: white;
+    border-radius: 5px;
+    font-family: 'Syne Mono', monospace;
+}
+.main-task-container-element > button:hover{
+    background-color: #007e7a;
+    transition: all 0.5s;
+    cursor: pointer;
+}
+#main-task-project-name-container{
+    grid-column-start: 1;
+    grid-column-end: 4;
+    font-size: 5vmin;
+    display: flex;
+    width: 70vw;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+#new-project-form{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+#new-project-name-label{
+    font-size: 2vmin;
+    font-weight:bolder;
+}
+#new-project-name-input{
+    max-width: 20vmin;
+    
+}
+#new-project-cancel-button{
+    width: auto;
+    background-color: transparent;
+    border: 2px solid transparent;
+    font-size: 2vmin;
+    font-weight:bolder;
+    color: white;
+    font-family: 'Syne Mono', monospace;
+}
+#new-project-submit-button{
+    width: auto;
+    background-color: transparent;
+    border: 2px solid transparent;
+    font-size: 2vmin;
+    font-weight:bolder;
+    color: white;
+    font-family: 'Syne Mono', monospace;
+}
+#new-project-cancel-button:hover{
+    background-color: #007e7a;
+    transition: all 0.5s;
+    cursor: pointer;
+}
+#new-project-submit-button:hover{
+    background-color: #007e7a;
+    transition: all 0.5s;
+    cursor: pointer;
+}
